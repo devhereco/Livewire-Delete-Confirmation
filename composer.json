@@ -1,0 +1,42 @@
+{
+    "name": "devhereco/livewire-delete-confirmation",
+    "description": "A Laravel package for easily handling the deletion of Eloquent models with confirmation and success/error messaging.",
+    "keywords": [
+        "laravel",
+        "livewire",
+        "livewire alert",
+        "model",
+        "delete",
+        "confirmation",
+        "messaging",
+        "confirmation dialog",
+        "model deletion",
+        "delete confirmation",
+        "Laravel package"
+    ],    
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/devhereco/Livewire-Delete-Confirmation",
+    "autoload": {
+        "psr-4": {
+            "devhereco\\LivewireConfirmDelete\\": "src"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mohammed B",
+            "email": "mohammed.b.dev@gmail.com"
+        }
+    ],
+    "require": {
+        "jantinnerezo/livewire-alert": "^2.0"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/devhereco/Livewire-Delete-Confirmation"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
