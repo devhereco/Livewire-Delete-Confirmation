@@ -9,7 +9,7 @@ class ConfirmDeleteComponent extends Component
 {
     use LivewireAlert;
 
-    protected $selectedModelItemToDestroy;
+    public $selectedModelItemToDestroy;
     
     protected $listeners = [
         'confirmDestroy'
