@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire;
+namespace devhereco\LivewireConfirmDelete\App\Http\Livewire;
 
 use Livewire\Component;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
