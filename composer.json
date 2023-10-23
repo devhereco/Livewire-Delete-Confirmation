@@ -37,6 +37,13 @@
             "url": "https://github.com/devhereco/Livewire-Delete-Confirmation"
         }
     ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DevHereCo\\LivewireConfirmDelete\\ConfirmDeleteServiceProvider"
+            ]
+        }
+    },
     "minimum-stability": "dev",
     "prefer-stable": true
 }

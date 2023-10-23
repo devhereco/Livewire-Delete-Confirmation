@@ -1,6 +1,6 @@
 <?php
 
-namespace devhereco\LivewireConfirmDelete\App\Http\Livewire;
+namespace devhereco\LivewireConfirmDelete;
 
 use Livewire\Component;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
@@ -15,7 +15,7 @@ class ConfirmDeleteComponent extends Component
     {
         $this->selectedModelItemToDestroy = $this->model::find($item);
         
-        $this->alert('warning', trans('LivewireConfirmDelete::ConfirmDelete.delete_title'), [
+        $this->alert('warning', __('LivewireConfirmDelete::ConfirmDelete.delete_title'), [
             'position'              => 'center',
             'timer'                 => '',
             'toast'                 => false,
@@ -23,9 +23,9 @@ class ConfirmDeleteComponent extends Component
             'onConfirmed'           => 'confirmDestroy',
             'showCancelButton'      => true,
             'onDismissed'           => '',
-            'text'                  => trans('LivewireConfirmDelete::ConfirmDelete.deleting_note'),
-            'cancelButtonText'      => trans('LivewireConfirmDelete::ConfirmDelete.cancel'),
-            'confirmButtonText'     => trans('LivewireConfirmDelete::ConfirmDelete.delete'),
+            'text'                  => __('LivewireConfirmDelete::ConfirmDelete.deleting_note'),
+            'cancelButtonText'      => __('LivewireConfirmDelete::ConfirmDelete.cancel'),
+            'confirmButtonText'     => __('LivewireConfirmDelete::ConfirmDelete.delete'),
         ]);
     }
 
@@ -34,12 +34,12 @@ class ConfirmDeleteComponent extends Component
         try {
             $this->selectedModelItemToDestroy->delete();
 
-            $this->alert('success', trans('LivewireConfirmDelete::ConfirmDelete.success_destroy'), [
+            $this->alert('success', __('LivewireConfirmDelete::ConfirmDelete.success_destroy'), [
                 'toast'             => false,
                 'position'          => 'top-end'
             ]);
         } catch (\Exception $e) {
-            $this->alert('warning', trans('LivewireConfirmDelete::ConfirmDelete.failed_deleting'), [
+            $this->alert('warning', __('LivewireConfirmDelete::ConfirmDelete.failed_deleting'), [
                 'toast'             => false,
                 'position'          => 'top-end'
             ]);
