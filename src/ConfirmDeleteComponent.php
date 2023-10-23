@@ -11,6 +11,10 @@ class ConfirmDeleteComponent extends Component
 
     protected $selectedModelItemToDestroy;
     
+    protected $listeners = [
+        'confirmDestroy'
+    ];
+
     public function destroy($item)
     {
         $this->selectedModelItemToDestroy = $this->model::find($item);
