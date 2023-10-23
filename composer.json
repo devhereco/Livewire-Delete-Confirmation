@@ -40,7 +40,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "DevHereCo\\LivewireConfirmDelete\\ConfirmDeleteServiceProvider"
+                "devhereco\\LivewireConfirmDelete\\ConfirmDeleteServiceProvider"
             ]
         }
     },
