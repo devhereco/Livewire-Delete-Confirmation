@@ -26,7 +26,7 @@ class ConfirmDeleteServiceProvider extends ServiceProvider
      */
     protected function registerResources()
     {
-        $this->loadTranslationsFrom(__DIR__ . '/../resources/lang', 'invoices');
+        $this->loadTranslationsFrom(__DIR__ . '/../resources/lang', 'ConfirmDelete');
     }
 
     /**
@@ -36,6 +36,6 @@ class ConfirmDeleteServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->loadTranslationsFrom(__DIR__.'/resources/lang', 'livewire-confirm-delete');
+        $this->loadTranslationsFrom(__DIR__.'/resources/lang', 'ConfirmDelete');
     }
 }
